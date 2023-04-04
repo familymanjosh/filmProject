@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Top 10 Cocktails</h1>
+    </div>
+
+    <nav id="nav">
+      <div id="film-bar" class="content">
+        <!-- show cocktail names here -->
+      </div>
+    </nav>
+    <div class="cocktailInfo">
+      <div id="detailed-info">
+        <p id="name">Pick a drink!</p>
+        <img
+          id="image"
+          src="assets/dummy.gif"
+        />
+      </div>
+      <div id="info1">
+        <div class="dropdown">
+          <button id="button" onclick="dropDown()" class="dropbtn">Cocktail Info</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a id= "one" href="#">Ingredients</a>
+            <a id="two" href="#">Instructions</a>
+          </div>
+      </div>
+        <h4>Add review: <span id="review"></span></h4>
+        <form id="review-form">
+          <input type="text" placeholder="Add Review" id="reviews" name="votes" />
+          <input type="submit" value="Add Review" />
+        </form>
+      </div>
+    </div>
+<script src="src/apiKey.js"></script>
+<script src="src/film.js"></script>
+</body>
+</html>
